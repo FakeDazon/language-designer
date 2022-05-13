@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLNG</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/Hyperiooo/Alrt.js@main/src/alrt.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Hyperiooo/Alrt.js@main/src/alrt.css">
+</head>
+
+<body>
+
+    <div id="top">
+
+        <div id="closeButton" onclick="openTop()"><svg width="50" viewBox="0 0 400
+                    250">
+                    <line x1="30" y1="30" x2="200" y2="200"
+                        stroke-linecap="round"
+                        stroke-width="30" stroke="white"></line><line x1="200"
+                        y1="200" x2="370" y2="30" stroke-linecap="round"
+                        stroke-width="30" stroke="white"></line></svg></div>
+    </div>
+
+    <div id="openButton" onclick="openTop()"><svg width="50" viewBox="0 0 400
+                250">
+                <line x1="30" y1="30" x2="200" y2="200" stroke-linecap="round"
+                    stroke-width="30" stroke="white"></line><line x1="200"
+                    y1="200" x2="370" y2="30" stroke-linecap="round"
+                    stroke-width="30" stroke="white"></line></svg></div>
+    <canvas width="1000" id="overlay">
+        </canvas>
+    <div id="cont">
+        <button class="outer" onclick="resetCharacter()">RESET</button>
+        <div class="center">
+            <input type="text" id="meaning" placeholder="meaning">
+            <div id="grids">
+                <svg width="400" id="grid">
+                    </svg>
+                <svg width="400" id="character">
+                    </svg>
+            </div>
+        </div>
+        <button class="outer" onclick="storeCharacter()">STORE</button>
+        <div id="previews">
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
