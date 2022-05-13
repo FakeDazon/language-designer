@@ -321,3 +321,7 @@ function displayCharacter(c) {
 
     }
 }
+
+if (characters == null) {
+    characters = {}
+}
